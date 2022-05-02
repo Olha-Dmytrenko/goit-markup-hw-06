@@ -353,6 +353,7 @@
         </div>
         </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -360,9 +361,68 @@
             <use href="./images/symbol-defs-2.svg#icon-close-black"></use>
             </svg>
             </button>
+            
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+            <form class="">
+                <div class="modal-field">
+                <label class="modal-lable" for="user-name">Имя</label>
+                <input 
+                type="text" 
+                class="madal-input" 
+                name="user-name" 
+                id="username" 
+                autofocus required
+                placeholder="Введите имя и фамилию">
+                </div>
+
+                <div class="modal-field">
+                <label class="modal-lable" for="tel">Телефон</label>
+                <input 
+                type="tel" 
+                class="madal-input" 
+                name="user-tel" 
+                id="tel" 
+                placeholder="Введите номер телефона"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                title="+380 (97) 111 11 11"
+                value="+380">
+                </div>
+
+                <div class="modal-field">
+                <label class="modal-lable" for="mail">Почта</label>
+                <input 
+                type="email" 
+                class="madal-input" 
+                name="user-mail" 
+                id="mail" 
+                placeholder="Введите почту">
+                </div>
+                
+                <div class="modal-field">
+                <label class="modal-lable" for="comments">Комментарии
+                    <textarea
+                    class="modal-text"
+                    name="comments" 
+                    id="comments"
+                    placeholder="Введите текст">
+                </textarea>
+                </label>
+                </div>
+
+                <div>
+                    <legend></legend>
+                    <label for=""></label>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </div>
+                
+                <button type="submit">Отправить</button>
+
+            </form>
         </div>
+
     </div>
-    </script>
+
     <script src="./js/modal.js"></script>
 
 </body>

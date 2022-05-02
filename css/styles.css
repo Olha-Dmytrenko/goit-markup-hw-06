@@ -812,6 +812,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms var(--timing-function);
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
 }
 
 .backdrop.is-hidden {
@@ -837,4 +838,57 @@ img {
   box-sizing: border-box;
   transition: 250ms var(--timing-function) 250ms var(--timing-function);
   align-items: center;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+input .modal-input {
+  width: 100%;
+  height: ;
+  border: ;
+  border-radius: ;
+  margin-bottom: ;
+  padding-left: ;
+}
+
+.modal-input::placeholder {
+  color: ;
+}
+
+.modal-input:valid {
+  border-color: ;
+}
+
+.modal-input:invalid {
+  border-color: ;
+}
+
+.modal-input::placeholder-shown {
+  border-color: ;
+}
+
+.modal-lable {
+  font-size: ;
+  color: 
+  margin-bottom: ;
+}
+
+.modal-text {
+  width: ;
+  height: ;
+  border: 
+  border-radius:
+  margin-bottom: ;
+  padding: ;
+  color:
+  resize:
+
 }
