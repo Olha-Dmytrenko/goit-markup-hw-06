@@ -367,12 +367,12 @@
             <form class="">
                 <div class="modal-field">
                 <label class="modal-lable" for="user-name">Имя</label>
-                <input 
+                <input
                 type="text" 
-                class="madal-input" 
+                class="modal-input" 
                 name="user-name" 
-                id="username" 
-                autofocus required
+                id="user-name" 
+                required
                 placeholder="Введите имя и фамилию">
                 </div>
 
@@ -380,7 +380,7 @@
                 <label class="modal-lable" for="tel">Телефон</label>
                 <input 
                 type="tel" 
-                class="madal-input" 
+                class="modal-input" 
                 name="user-tel" 
                 id="tel" 
                 placeholder="Введите номер телефона"
@@ -393,30 +393,34 @@
                 <label class="modal-lable" for="mail">Почта</label>
                 <input 
                 type="email" 
-                class="madal-input" 
+                class="modal-input" 
                 name="user-mail" 
                 id="mail" 
                 placeholder="Введите почту">
                 </div>
                 
                 <div class="modal-field">
-                <label class="modal-lable" for="comments">Комментарии
-                    <textarea
-                    class="modal-text"
-                    name="comments" 
-                    id="comments"
-                    placeholder="Введите текст">
-                </textarea>
-                </label>
+                <label class="modal-lable" for="comments">Комментарии</label>
+                <textarea
+                class="modal-text"
+                name="comments"
+                rows="5"
+                placeholder="Введите текст"></textarea>
                 </div>
 
                 <div>
-                    <legend></legend>
-                    <label for=""></label>
-                    <input type="checkbox" id="" name="" value="" checked>
+                <input 
+                type="checkbox"
+                class="checkbox" 
+                id="consent" 
+                name="consent" 
+                value="" checked>
+                <label class="modal-consent" for="consent">Соглашаюсь с рассылкой и принимаю
+                    <a class="checkbox-consent" href="">Условия договора</a>
+                </label>
                 </div>
                 
-                <button type="submit">Отправить</button>
+                <button type="submit" class="modal-button" cursor="pointer">Отправить</button>
 
             </form>
         </div>

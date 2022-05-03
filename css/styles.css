@@ -457,7 +457,8 @@ img {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  transition: background-color 250ms, color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: background-color 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .link-icon {
@@ -609,7 +610,8 @@ img {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms, color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: background-color 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .icon-footer {
@@ -676,7 +678,8 @@ img {
   padding-right: 22px;
   padding-left: 22px;
   margin-bottom: 50px;
-  transition: background-color 250ms, color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: background-color 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .button-filter:hover,
@@ -703,7 +706,8 @@ img {
 .link-projects {
   text-decoration: none;
   display: block;
-  transition: box-shadow 250ms, color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: box-shadow 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .link-projects:hover,
@@ -846,17 +850,18 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
 }
 
-input .modal-input {
+.modal-input {
   width: 100%;
-  height: ;
-  border: ;
-  border-radius: ;
-  margin-bottom: ;
-  padding-left: ;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 28px;
+  padding-left: 42px;
 }
 
 .modal-input::placeholder {
@@ -876,19 +881,70 @@ input .modal-input {
 }
 
 .modal-lable {
-  font-size: ;
-  color: 
-  margin-bottom: ;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .modal-text {
-  width: ;
-  height: ;
-  border: 
-  border-radius:
-  margin-bottom: ;
-  padding: ;
-  color:
-  resize:
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: horizontal;
+}
 
+.modal-consent {
+  width: 400px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 30px;
+}
+
+.modal-button {
+  width: 200px;
+  height: 50px;
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  padding: 10px 55px;
+  margin: 0 auto;
+}
+
+/*  
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 164px;
+  margin-right: 164px; */
+
+.checkbox-consent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-text-color);
+}
+
+.checkbox {
+  padding-left: 54px;
 }
