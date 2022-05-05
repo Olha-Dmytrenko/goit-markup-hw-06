@@ -924,7 +924,7 @@ img {
   letter-spacing: 0.03em;
   display: flex;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   position: relative;
 }
 
@@ -938,6 +938,7 @@ img {
   border: 2px solid #000000;
   border-radius: 3px;
   margin-right: 5px;
+  margin-left: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -981,20 +982,6 @@ img {
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   padding: 10px 55px;
+  margin: 0 auto;
+  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
-
-/* .check-text::before { 
-  content: '';
-  width: ;
-  height: ;
-  border: ;
-  border-radius: ;
-  margin-right: ;
-}
-
-.input-check::checked + .check-text::before {
-  background-image: ;
-  background-color: ;
-  background-position: center;
-  b
-}*/
