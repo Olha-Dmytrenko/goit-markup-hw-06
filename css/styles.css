@@ -646,6 +646,16 @@ img {
   padding-top: 12px;
 }
 
+/* Форми у футері */
+.online-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
 /* Styles for portfolio */
 
 /* Секция портфолио */
@@ -924,8 +934,8 @@ img {
   letter-spacing: 0.03em;
   display: flex;
   color: var(--primary-text-color);
-  margin-bottom: 34px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .check-icon {
@@ -939,6 +949,7 @@ img {
   border-radius: 3px;
   margin-right: 5px;
   margin-left: 14px;
+  margin-top: -7px;
   display: flex;
   align-items: center;
   justify-content: center;
