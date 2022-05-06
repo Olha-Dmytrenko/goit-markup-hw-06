@@ -531,6 +531,7 @@ img {
 
 .page-footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 /* Logo-footer */
@@ -598,6 +599,7 @@ img {
 
 .social-list-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-link {
@@ -637,16 +639,33 @@ img {
 
 .join-title {
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 12px;
 }
 
 /* Форми у футері */
+
+.online-form {
+  display: flex;
+  align-items: baseline;
+}
+
+.online-field input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  display: flex;
+}
+
 .online-text {
   font-weight: 700;
   font-size: 14px;
@@ -654,9 +673,54 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  margin-left: 93px;
 }
 
-/* Styles for portfolio */
+.online-mail {
+  width: 359px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--primary-background-color);
+  outline: none;
+  margin-right: 12px;
+  margin-left: 93px;
+}
+
+.input-btn {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  margin-left: 12px;
+  margin: 0 auto;
+  padding: 10px 62px 10px 29px;
+  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.input-icon-btn {
+  position: absolute;
+  right: 18px;
+  top: 25%;
+  fill: var(--secondary-text-color);
+  background-color: var(--accent-text-color);
+  margin-right: 8px;
+  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
 
 /* Секция портфолио */
 
