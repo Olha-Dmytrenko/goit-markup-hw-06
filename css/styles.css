@@ -663,7 +663,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
-  display: flex;
 }
 
 .online-text {
@@ -709,7 +708,8 @@ img {
   margin-left: 12px;
   margin: 0 auto;
   padding: 10px 62px 10px 29px;
-  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: background-color 250ms color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .input-icon-btn {
@@ -719,7 +719,8 @@ img {
   fill: var(--secondary-text-color);
   background-color: var(--accent-text-color);
   margin-right: 8px;
-  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: background-color 250ms color 250ms box-shadow 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 /* Секция портфолио */
@@ -914,8 +915,18 @@ img {
   background-color: var(--secondary-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  transition: 250ms var(--timing-function) 250ms var(--timing-function);
+  transition: background-color 250ms, border-color 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
   align-items: center;
+}
+
+.modal-icon {
+  transition: fill 250ms var(--timing-function);
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: var(--accent-text-color);
 }
 
 /* Форми модального вікна */
@@ -943,7 +954,8 @@ img {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms;
+  transition: background-color 250ms, border-color 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .modal-input {
@@ -954,14 +966,17 @@ img {
   box-sizing: border-box;
   padding-left: 42px;
   outline: none;
-  transition: border-color 250ms;
+  transition: background-color 250ms, border-color 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:hover {
   border-color: var(--accent-text-color);
 }
 
-.modal-input:focus + .input-icon {
+.modal-input:focus + .input-icon,
+.modal-input:hover + .input-icon {
   fill: var(--accent-text-color);
 }
 
@@ -984,10 +999,12 @@ img {
   padding: 12px 16px;
   resize: none;
   outline: none;
-  transition: border-color 250ms;
+  transition: background-color 250ms, border-color 250ms, color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
-.modal-text:focus {
+.modal-text:focus,
+.modal-text:hover {
   border-color: var(--accent-text-color);
 }
 
@@ -1011,21 +1028,28 @@ img {
   height: 15px;
   border: 2px solid #000000;
   border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 5px;
   margin-left: 14px;
   margin-top: -7px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms border-color 250ms box-shadow 250ms color 250ms
+      var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .input-check:checked + .check-text span {
   background-color: var(--accent-text-color);
   border: transparent;
 }
-.input-check:focus + .check-text span {
+.input-check:focus + .check-text span,
+.input-check:hover + .check-text span {
   border-color: var(--accent-text-color);
+  box-shadow: none;
 }
+
 .input-check:checked + .check-text .check-icon {
   fill: #ffffff;
 }
@@ -1042,8 +1066,7 @@ img {
 .modal-button {
   width: 200px;
   height: 50px;
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-text-color);
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -1058,5 +1081,12 @@ img {
   color: var(--secondary-text-color);
   padding: 10px 55px;
   margin: 0 auto;
-  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: color 250ms background-color 250ms box-shadow 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
