@@ -971,6 +971,7 @@ img {
   border-radius: 4px;
   box-sizing: border-box;
   outline: none;
+  padding: 12px 42px;
   transition: background-color 250ms, border-color 250ms, color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
 }
